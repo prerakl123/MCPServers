@@ -1,0 +1,33 @@
+{
+  "_note": "Heuristic regexes for parse_flt_text. Each pattern is tried in order; first match wins. score-keyed groups must be named with Python's (?P<name>...) syntax.",
+  "patterns": [
+    {
+      "name": "mba_com_focus_summary",
+      "description": "Plain-text export from mba.com Focus score report.",
+      "regex": "Total[^0-9]*(?P<total>\\d{3})[\\s\\S]*?Quant[^0-9]*(?P<quant>\\d{2})[\\s\\S]*?Verbal[^0-9]*(?P<verbal>\\d{2})[\\s\\S]*?(?:Data\\s+Insights|DI)[^0-9]*(?P<di>\\d{2})",
+      "ignore_case": true
+    },
+    {
+      "name": "manhattan_table",
+      "description": "Manhattan Prep CAT result tables.",
+      "regex": "Total\\s*Score\\s*[:|\\-]?\\s*(?P<total>\\d{3})[\\s\\S]*?Quant(?:itative)?\\s*[:|\\-]?\\s*(?P<quant>\\d{2})[\\s\\S]*?Verbal\\s*[:|\\-]?\\s*(?P<verbal>\\d{2})[\\s\\S]*?(?:Data\\s+Insights|DI)\\s*[:|\\-]?\\s*(?P<di>\\d{2})",
+      "ignore_case": true
+    },
+    {
+      "name": "ttp_summary",
+      "description": "Target Test Prep summary line.",
+      "regex": "Score\\s*(?P<total>\\d{3})\\s*\\|\\s*Q(?P<quant>\\d{2})\\s*\\|\\s*V(?P<verbal>\\d{2})\\s*\\|\\s*DI(?P<di>\\d{2})",
+      "ignore_case": true
+    },
+    {
+      "name": "generic_q_v_di",
+      "description": "Generic 'Q: 84  V: 82  DI: 75  Total: 615' style.",
+      "regex": "Q\\s*[:=]?\\s*(?P<quant>\\d{2})[^0-9]+V\\s*[:=]?\\s*(?P<verbal>\\d{2})[^0-9]+DI\\s*[:=]?\\s*(?P<di>\\d{2})[^0-9]*(?:Total\\s*[:=]?\\s*(?P<total>\\d{3}))?",
+      "ignore_case": true
+    }
+  ],
+  "percentile_pattern": {
+    "regex": "(?P<section>Quant|Verbal|DI|Data\\s+Insights)[^%0-9]*(?P<value>\\d{2,3})\\s*(?:%|percentile|pct)",
+    "ignore_case": true
+  }
+}

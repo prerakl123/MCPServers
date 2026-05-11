@@ -1,0 +1,13 @@
+[project]
+name = "input-mcp"
+version = "0.1.0"
+description = "MCP server for live user input via a localhost popup UI service"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.2.0",
+    "httpx>=0.27.0",
+    "customtkinter>=5.2.0",
+    "pystray>=0.19.5",
+    "Pillow>=10.0.0",
+]

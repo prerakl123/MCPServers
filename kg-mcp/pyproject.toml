@@ -1,0 +1,9 @@
+[project]
+name = "kg-mcp"
+version = "0.1.0"
+description = "MCP knowledge-graph server: SQLite + FTS5 memory store with relations"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.2.0",
+]

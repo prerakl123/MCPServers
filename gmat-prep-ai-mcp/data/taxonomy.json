@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-05-08T00:00:00Z",
+  "source": "server/utils/constants.js",
+  "sections": [
+    { "code": "QUANT", "label": "Quantitative Reasoning" },
+    { "code": "VERBAL", "label": "Verbal Reasoning" },
+    { "code": "DI", "label": "Data Insights" }
+  ],
+  "content_domains": [
+    { "code": "Q_ARITHMETIC", "section": "QUANT", "label": "Arithmetic" },
+    { "code": "Q_ALGEBRA", "section": "QUANT", "label": "Algebra" },
+    { "code": "DI_MATH", "section": "DI", "label": "Math Related" },
+    { "code": "DI_NON_MATH", "section": "DI", "label": "Non-Math Related" }
+  ],
+  "question_types": [
+    { "code": "Q_PURE_CONTEXT", "section": "QUANT", "label": "Pure Context (abstract math)" },
+    { "code": "Q_REAL_CONTEXT", "section": "QUANT", "label": "Real Context (word problems)" },
+    { "code": "V_CR", "section": "VERBAL", "label": "Critical Reasoning" },
+    { "code": "V_RC", "section": "VERBAL", "label": "Reading Comprehension" },
+    { "code": "DI_DS", "section": "DI", "label": "Data Sufficiency" },
+    { "code": "DI_GT", "section": "DI", "label": "Graphs and Tables" },
+    { "code": "DI_MSR", "section": "DI", "label": "Multi-Source Reasoning" },
+    { "code": "DI_TPA", "section": "DI", "label": "Two-Part Analysis" }
+  ],
+  "fundamental_skills": [
+    { "code": "Q_RATES_RATIOS_PERCENT", "section": "QUANT", "label": "Rates, Ratios and Percentages" },
+    { "code": "Q_VALUE_ORDER_FACTORS", "section": "QUANT", "label": "Value, Order and Factors" },
+    { "code": "Q_EQUAL_UNEQUAL_ALG", "section": "QUANT", "label": "Equalities, Inequalities and Algebra" },
+    { "code": "Q_COUNTING_SETS_SERIES", "section": "QUANT", "label": "Counting, Sets, Series, Probability and Statistics" },
+    { "code": "V_ANALYSIS_CRITIQUE", "section": "VERBAL", "label": "Analysis and Critique" },
+    { "code": "V_PLAN_CONSTRUCT", "section": "VERBAL", "label": "Plan and Construct" },
+    { "code": "V_IDENTIFY_INFERRED", "section": "VERBAL", "label": "Identify Inferred Idea" },
+    { "code": "V_IDENTIFY_STATED", "section": "VERBAL", "label": "Identify Stated Idea" }
+  ],
+  "difficulty_levels": [
+    { "level": 1, "label": "Easy" },
+    { "level": 2, "label": "Medium-Low" },
+    { "level": 3, "label": "Medium" },
+    { "level": 4, "label": "Medium-High" },
+    { "level": 5, "label": "Hard" }
+  ],
+  "difficulty_buckets": ["easy", "medium", "hard"],
+  "convergence_options": ["easy", "medium", "hard"],
+  "answer_formats": [
+    "single_choice",
+    "data_sufficiency",
+    "two_part",
+    "table_radio",
+    "table_checkbox",
+    "inline_dropdown"
+  ],
+  "time_budgets_seconds": {
+    "Q_PURE_CONTEXT": { "easy": 90, "medium": 120, "hard": 150 },
+    "Q_REAL_CONTEXT": { "easy": 105, "medium": 135, "hard": 165 },
+    "V_CR":           { "easy": 105, "medium": 135, "hard": 165 },
+    "V_RC":           { "easy": 120, "medium": 150, "hard": 180 },
+    "DI_DS":          { "easy": 105, "medium": 135, "hard": 165 },
+    "DI_GT":          { "easy": 90,  "medium": 120, "hard": 150 },
+    "DI_MSR":         { "easy": 135, "medium": 165, "hard": 195 },
+    "DI_TPA":         { "easy": 120, "medium": 150, "hard": 180 }
+  }
+}

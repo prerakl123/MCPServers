@@ -1,0 +1,59 @@
+{
+  "mcpServers": {
+    "time-mcp": {
+      "command": "uv run",
+      "args": ["main.py"],
+      "cwd": "C:/Users/Prerak/MCPServers/time-mcp",
+      "env": {
+        "TIME_MCP_LOG_LEVEL": "info",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    "search-mcp": {
+      "command": "uv run",
+      "args": ["main.py"],
+      "cwd": "C:/Users/Prerak/MCPServers/search-mcp",
+      "env": {
+        "SEARCH_MCP_LOG_LEVEL": "info",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    "sysops-mcp": {
+      "command": "uv run",
+      "args": ["main.py"],
+      "cwd": "C:/Users/Prerak/MCPServers/sysops-mcp",
+      "env": {
+        "SYSOPS_MCP_LOG_LEVEL": "info",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    "kg-mcp": {
+      "command": "uv run",
+      "args": ["main.py"],
+      "cwd": "C:/Users/Prerak/MCPServers/kg-mcp",
+      "env": {
+        "KG_MCP_LOG_LEVEL": "info",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    "gmat-prep-ai": {
+      "command": "uv run",
+      "args": ["main.py"],
+      "cwd": "C:/Users/Prerak/MCPServers/gmat-prep-ai-mcp",
+      "env": {
+        "GMAT_MCP_LOG_LEVEL": "info",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    "input-mcp": {
+      "command": "uv run",
+      "args": ["main.py"],
+      "cwd": "C:/Users/Prerak/MCPServers/input-mcp",
+      "env": {
+        "INPUT_MCP_LOG_LEVEL": "info",
+        "INPUT_MCP_THEME": "system",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    }
+  }
+}

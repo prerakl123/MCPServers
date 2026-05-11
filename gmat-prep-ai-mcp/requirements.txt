@@ -1,0 +1,11 @@
+# Pinned-by-major fallback when not using pyproject.toml.
+mcp>=1.0.0
+sympy>=1.12
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+Pillow>=10.0
+
+# dev
+pytest>=7.4
+pytest-asyncio>=0.23

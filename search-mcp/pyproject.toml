@@ -1,0 +1,16 @@
+[project]
+name = "search-mcp"
+version = "0.1.0"
+description = "MCP server for web search, file search, SQLite query, semantic vector search, and knowledge-graph search"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.2.0",
+    "httpx>=0.27.0",
+    "trafilatura>=2.0.0",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=5.0.0",
+    "ddgs>=6.0.0",
+    "sqlite-vec>=0.1.6",
+    "fastembed>=0.4.0",
+]
